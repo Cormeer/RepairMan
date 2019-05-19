@@ -10,7 +10,6 @@ local check = CreateFrame('CheckButton', "RMOCheck", RMO, "InterfaceOptionsCheck
 if(checked == nil) then checked = true end
 
 local function merchantShowHandler()
-    print(checked)
     if(CanMerchantRepair() and checked) then
         RepairAllItems()
     end 
